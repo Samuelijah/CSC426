@@ -34,18 +34,13 @@ const OP_LABEL: Record<Op, string> = {
 }
 
 export function Calculator() {
-  // The value currently shown / being typed
   const [display, setDisplay] = useState("0")
-  // The stored left-hand operand
   const [accumulator, setAccumulator] = useState<number | null>(null)
-  // The pending operator
   const [pendingOp, setPendingOp] = useState<Op | null>(null)
-  // Whether the next digit should start a fresh number
   const [overwrite, setOverwrite] = useState(true)
 
   const formatResult = useCallback((n: number): string => {
     if (Number.isNaN(n) || !Number.isFinite(n)) return "Error"
-    // Trim long floats but keep precision reasonable
     const rounded = Math.round((n + Number.EPSILON) * 1e10) / 1e10
     return String(rounded)
   }, [])
