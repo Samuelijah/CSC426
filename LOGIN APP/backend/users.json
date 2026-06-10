@@ -1,0 +1,14 @@
+[
+  {
+    "username": "samuel",
+    "password": "$2a$10$SAiVOBO3nhLu1/HZOePFo.JMP0Y7tiiV39620JIQXnj0tiwq5efhq",
+    "email": "john@example.com",
+    "createdAt": "2026-06-10T05:32:28.000Z"
+  },
+  {
+    "username": "admin",
+    "password": "$2a$10$kgmV5e25A423KfMpet1NJesw0TVPzMwKlaA4w5YmeCr0zNk/C6Io2",
+    "email": "admin@example.com",
+    "createdAt": "2026-06-10T05:32:28.349Z"
+  }
+]
